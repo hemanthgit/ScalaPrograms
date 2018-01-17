@@ -1,6 +1,8 @@
 //Note : you can control the superclass constructor that is called by the primary constructor in a subclass, 
 //          but you can’t control the superclass constructor that’s called by an auxiliary constructor in the subclass.
 
+//Regarding auxiliary constructors, because the first line of an auxiliary constructor must be a call to another constructor 
+of the current class, there is no way for auxiliary constructors to call a superclass constructor.
 class ChildEmployee extends ParentPerson("Hemanth",28) {
   var salary: Int = 0;
   
