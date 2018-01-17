@@ -3,7 +3,9 @@ class VariableScope {
   
   var symbolvar: String = "default symbol"; // Accessable any where by custom and default setters and getters.
   private var a : Int = 0 ; // Acceessable only with in the class which includes companion object.
-  private [this] var b: Int = 0; //accessable only with in the class not even companion object.
+  private [this] var b: Int = 0; //accessable only with in the class not even companion object.This field
+                                 //is object-private, which means that it can only be accessed from the object that contains it
+
   
   // getter
   def getSymbolvar = symbolvar
