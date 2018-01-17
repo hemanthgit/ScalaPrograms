@@ -52,3 +52,5 @@ object VariableScope extends App {
   println(v2.b) // invalid as 'b' variable is private[this]
 
 }
+
+// Note : we can use @BeanProperty on non-private variables to generate setter and getter methods in java style.
