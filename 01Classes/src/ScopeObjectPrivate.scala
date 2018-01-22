@@ -1,3 +1,7 @@
+
+// private[this] is available only to the current instance of it's declared class
+// private method is available to the current instance and other instances of the class it's declared in.
+
 class ScopeObjectPrivate(val usrname: String, val pwd: String) {
   private var username = usrname
   private[this] var password = pwd
